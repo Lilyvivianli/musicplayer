@@ -1,0 +1,21 @@
+<!-- 头部 -->
+<view class='header'>
+  <!-- 歌曲名、歌手名 -->
+    <view class='msg'>
+      <view>{{songName}}</view>
+      <view>
+        <text wx:for="{{singer}}">{{item.name}}   </text>
+      </view>
+    </view>
+  <!-- 海报图片 -->
+    <view class='img'>
+      <image src='{{imgUrl}}'></image>
+    </view>
+</view>
+<!-- 底部 -->
+<view class='btns'>
+  <view bindtap='prev'>上一曲</view>
+  <view bindtap='start'>{{play}}</view>
+  <view bindtap='next'>下一曲</view>
+  <view bindtap='collection' class='{{isCollected}}'>收藏</view>
+</view>

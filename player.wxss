@@ -1,0 +1,27 @@
+.header,
+.btns{
+  color: yellow;
+}
+.header,.msg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.msg{
+  margin-bottom: 100rpx;
+}
+.img{
+  margin-bottom: 200rpx;
+}
+.btns{
+  display: flex;
+  justify-content: space-around;
+}
+.btns>view{
+  border: 2rpx solid #ccc;
+  padding: 10rpx 20rpx;
+  border-radius: 4rpx;
+}
+.btns>.collection{
+  color: #ccc;
+}
